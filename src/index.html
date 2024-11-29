@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="block bg-white">
+      <div class="container mx-auto sm:px-10 md:px-10 lg:px-10 2xl:px-40">
+        <div class="flex justify-between items-center py-3">
+          <img src="assets/images/logo-mobile.svg" alt="logo" class="block md:hidden" />
+          <img src="assets/images/logo-desktop.svg" alt="logo" class="hidden md:block" />
+
+          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-gray-600 bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-400 font-medium rounded-full text-xs px-5 py-2.5 text-center inline-flex items-center" type="button">
+            <img src="assets/images/language-skill.webp" alt="language-skill" class="me-1" />
+            ID
+            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-fit dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 hover:text-gray-600 font-[poppins]dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Indonesia</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">English</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="bg-[url('assets/images/home-banner-mobile.webp')] md:bg-[url('assets/images/home-banner-desktop.webp')] h-[606px] sm:h-[740px] md:h-[400px] lg:h-[540px] 2xl:h-[700px] bg-cover sm:py-[80px] md:py-[60px] lg:py-[70px] mt-8 md:mt-0 relative">
+      <div class="container mx-auto md:px-10 lg:px-10 2xl:px-40">
+        <div class="flex gap-2 flex-col sm:w-3/4 lg:w-1/2">
+          <h1 class="text-dark-green font-serif font-black text-[38px] sm:text-[60px] md:text-[40px] lg:text-[56px] md:leading-[118%]">
+            Elevate Your Health,
+            <span class="text-light-green">Revive Your Energy</span>
+          </h1>
+        </div>
+
+        <button type="button" class="block md:hidden text-white font-serif font-medium rounded-full text-lg px-5 py-2.5 absolute left-0 right-0 w-10/12 bg-orange-500 hover:bg-orange-600" style="margin-inline: auto; bottom: -20px">Order Now</button>
+
+        <button type="button" class="hidden md:block text-white font-serif font-medium rounded-full text-lg px-5 py-2.5 mt-24 w-[268px] bg-orange-500 hover:bg-orange-600">Order Now</button>
+      </div>
+    </div>
+
+    <!-- End Jumbotron -->
+
+    <!-- Registered Location -->
+    <div class="bg-[url('assets/images/bg-location-registered-mobile.webp')] bg-cover bg-center pt-9 pb-32 mx-auto h-[244px] md:h-[200px]">
+      <div class="container mx-auto md:px-[160px] lg:px-[200px] xl:px-[263px]">
+        <div class="flex flex-col gap-1 items-center">
+          <div class="flex flex-row items-center m-auto justify-center">
+            <h4 class="text-white text-center font-serif text-base md:text-[29px] font-extrabold inline-flex gap-1 items-center">
+              Get
+              <span><img src="assets/images/icon-247.svg" alt="icon-247" class="w-8 h-8 md:w-12 md:h-12" /></span>
+              doctor, nurse, and IV services
+            </h4>
+          </div>
+          <p class="text-white text-center font-serif text-base md:text-[28px] font-medium">at your villa/hotel with Clinic Cepat Sehat's registered staff.</p>
+        </div>
+
+        <div class="container mx-auto px-8 md:px-0">
+          <div class="bg-soft-green px-4 py-7 rounded-2xl mt-5">
+            <div class="grid grid-cols-2 md:grid-cols-3 w-fit mx-auto">
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Seminyak
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Canggu
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Pererenan
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Umalas
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Legian
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Kuta
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Nusa Dua
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Sanur
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Uluwatu
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Ubud
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Denpasar
+              </div>
+              <div class="flex flex-row gap-1 items-center text-dark-primary font-serif font-medium md:text-[16px] lg:text-[20px]">
+                <i class="ph-fill ph-map-pin text-xs"></i>
+                Kerobokan
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Registered Location -->
+
+    <!-- Our Service -->
+    <div class="container mx-auto mt-36 pb-9 md:pb-16 2xl:px-40">
+      <h1 class="font-serif text-2xl md:text-4xl font-extrabold text-dark-green text-center mb-5 md:mb-7">Our Service</h1>
+      <div class="flex flex-col md:grid md:grid-cols-3 gap-6 px-3 md:px-0">
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Bali Belly Infusion</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/1.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/IV BAG 3.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.890.000</div>
+          </div>
+          <div id="accordion-bali-belly-infusion" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-bali-belly-infusion">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-bali-belly-infusion-description" aria-expanded="true" aria-controls="accordion-open-bali-belly-infusion-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-bali-belly-infusion-description" class="hidden h-full" aria-labelledby="accordion-open-heading-bali-belly-infusion">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">This IV drip provides a combination of therapeutic components to alleviate pain, nausea, and protect the gastrointestinal tract. The vitamin boosters aim to enhance overall well-being, boost immunity, and support various metabolic processes.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-bali-belly-infusion-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-bali-belly-infusion" aria-expanded="false" aria-controls="accordion-open-bali-belly-infusion" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-bali-belly-infusion" class="hidden" aria-labelledby="accordion-open-bali-belly-infusion-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm">Therapeutic Components:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Pain Killer IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Anti-Vomiting IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Gaster Protector IV</li>
+                </ul>
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Vitamin Boosters:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B1 (Thiamine)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (Riboflavin)</li>
+                  <li class="text-dark-primary font-serif text-sm">Nicotinamide (Vitamin B3)</li>
+                  <li class="text-dark-primary font-serif text-sm">Pantothenic Acid (Vitamin B5)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6</li>
+                  <li class="text-dark-primary font-serif text-sm">Folic Acid</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B12</li>
+                  <li class="text-dark-primary font-serif text-sm">Biotin</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl self-stretch md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Super Bali Belly IV</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/2.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Super Bali Belly IV.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 2.290.000</div>
+          </div>
+          <div id="accordion-super-bali-belly-iv" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-super-bali-belly-iv">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-super-bali-belly-iv-description" aria-expanded="true" aria-controls="accordion-open-super-bali-belly-iv-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-super-bali-belly-iv-description" class="hidden h-full" aria-labelledby="accordion-open-heading-super-bali-belly-iv">
+              <div class="bg-soft-green p-5 dark:bg-soft-green h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">A turbocharged upgrade to our Standard Bali Belly. Infused with immune-empowering zinc, and gut-nourishing probiotics, this blend is designed for medical-grade resilience. Beyond addressing Bali belly symptoms, it stands as a robust solution, fortifying your well-being at a cellular level. Immunity, detoxification, and digestive health converge for your optimal vitality.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-super-bali-belly-iv-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-super-bali-belly-iv" aria-expanded="false" aria-controls="accordion-open-super-bali-belly-iv" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-super-bali-belly-iv" class="hidden" aria-labelledby="accordion-open-super-bali-belly-iv-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm">Therapeutic Components:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Pain Killer IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Anti-Vomiting IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Gaster Protector IV</li>
+                </ul>
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Vitamin Boosters:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B1 (Thiamine)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (Riboflavin)</li>
+                  <li class="text-dark-primary font-serif text-sm">Nicotinamide (Vitamin B3)</li>
+                  <li class="text-dark-primary font-serif text-sm">Pantothenic Acid (Vitamin B5)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6</li>
+                  <li class="text-dark-primary font-serif text-sm">Folic Acid</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B12</li>
+                  <li class="text-dark-primary font-serif text-sm">Biotin</li>
+                  <li class="text-dark-primary font-serif text-sm">Zinc (20mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Probiotic</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full h-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Basic Immune Booster</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/3.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Super Immune Booster.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.675.000</div>
+          </div>
+          <div id="accordion-basic-immune-booster" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-basic-immune-booster">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-basic-immune-booster-description" aria-expanded="true" aria-controls="accordion-open-basic-immune-booster-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-basic-immune-booster-description" class="hidden h-full" aria-labelledby="accordion-open-heading-basic-immune-booster">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">This IV drip comprises essential electrolytes, a robust Vitamin B complex, and a dose of Vitamin C. It acts to fortify the immune system, enhance metabolic function, and promote the synthesis of collagen, thereby supporting overall health.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-basic-immune-booster-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-basic-immune-booster" aria-expanded="false" aria-controls="accordion-open-basic-immune-booster" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-basic-immune-booster" class="hidden" aria-labelledby="accordion-open-basic-immune-booster-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Electrolytes (500 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B12 (5 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Biotin (60 mcg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Folic Acid (400 mcg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (3.6 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Nicotinamide (40 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Pantothenic acid (15 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B1 (102.5 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6 (104 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C (1,000 mg)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Standard Immune Booster</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/3.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Super Immune Booster.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 2.075.000</div>
+          </div>
+          <div id="accordion-standard-immune-booster" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-standard-immune-booster">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-standard-immune-booster-description" aria-expanded="true" aria-controls="accordion-open-standard-immune-booster-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-standard-immune-booster-description" class="hidden h-full" aria-labelledby="accordion-open-heading-standard-immune-booster">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">This IV drip delivers a blend of vital electrolytes, an elevated quantity of Vitamin C, and a comprehensive Vitamin B complex. It serves to intensify the immune response, boost energy metabolism, stimulate red blood cell production, and contribute to collagen production for enhanced skin health and immune system resilience.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-standard-immune-booster-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-standard-immune-booster" aria-expanded="false" aria-controls="accordion-open-standard-immune-booster" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-standard-immune-booster" class="hidden" aria-labelledby="accordion-open-standard-immune-booster-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Electrolytes (500 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C (2,100 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B1 (102.5 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (103.6 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Nicotinamide (40 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Pantothenic acid (15 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6 (4 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Folic Acid (400 mcg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B12 (10 mcg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Biotin (60 mcg)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Super Immune Booster</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/5.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/IV BAG 4.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 2.440.000</div>
+          </div>
+          <div id="accordion-super-immune-booster" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-super-immune-booster">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-super-immune-booster-description" aria-expanded="true" aria-controls="accordion-open-super-immune-booster-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-super-immune-booster-description" class="hidden h-full" aria-labelledby="accordion-open-heading-super-immune-booster">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">This potent IV drip combines electrolytes, NAC-Glutathione Booster, Zinc, and an extensive range of vitamins and minerals, including A, D, E, C, B1, B2, B6, B12, and B5. It provides a formidable immune enhancement and supports various bodily functions, including antioxidant defenses, immune function, wound healing, and energy production. This comprehensive approach contributes to overall health and vitality.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-super-immune-booster-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-super-immune-booster" aria-expanded="false" aria-controls="accordion-open-super-immune-booster" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-super-immune-booster" class="hidden" aria-labelledby="accordion-open-super-immune-booster-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Electrolytes (500 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">NAC-Glutathione Booster (30 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Zinc (5 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Retinol (3,500 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Cholecalciferol (220 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Alphatocopherol (11.2 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C (2125 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamine B1 (103.51 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (4.14 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6 (104.53 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamine B12 (5.006 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Folic acid (0.414 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B5 (17.25 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Biotin (0.069 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Nicotinamide (46 mg)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Hangover Infusion</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/6.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Hangover Infusion.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.860.000</div>
+          </div>
+          <div id="accordion-hangover-infusion" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-hangover-infusion">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-hangover-infusion-description" aria-expanded="true" aria-controls="accordion-open-hangover-infusion-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-hangover-infusion-description" class="hidden h-full" aria-labelledby="accordion-open-heading-hangover-infusion">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">Hangover infusion treatment is a quick 30-60 minute procedure to help you quickly overcome hangover symptoms through hydration and a combination of vitamins and electrolytes.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-hangover-infusion-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-hangover-infusion" aria-expanded="false" aria-controls="accordion-open-hangover-infusion" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-hangover-infusion" class="hidden" aria-labelledby="accordion-open-hangover-infusion-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Pain Killer IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Anti-Vomiting IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Gaster Protector IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Vit B1, B6, B12 IV</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Fever Infusion</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/7.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Fever Infusion.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.190.000</div>
+          </div>
+          <div id="accordion-fever-infusion" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-fever-infusion">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-fever-infusion-description" aria-expanded="true" aria-controls="accordion-open-fever-infusion-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-fever-infusion-description" class="hidden h-full" aria-labelledby="accordion-open-heading-fever-infusion">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">Fever Infusion treatment is a rapid recovery of high fever for adults through intravenous and can be beneficial to restore body fluids.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-fever-infusion-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-fever-infusion" aria-expanded="false" aria-controls="accordion-open-fever-infusion" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-fever-infusion" class="hidden" aria-labelledby="accordion-open-fever-infusion-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Paracetamol IV</li>
+                  <li class="text-dark-primary font-serif text-sm">RL (Elektorlit) 500ml</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Gerd / Gastritis Infusion</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/8.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/IV BAG 5.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.890.000</div>
+          </div>
+          <div id="accordion-gerd-infusion" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-gerd-infusion">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-gerd-infusion-description" aria-expanded="true" aria-controls="accordion-open-gerd-infusion-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-gerd-infusion-description" class="hidden h-full" aria-labelledby="accordion-open-heading-gerd-infusion">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">Gerd/Gastritis Infusion treatment is useful for treating inflammation in the stomach or gaster caused by irritation due to stomach acid.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-gerd-infusion-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-gerd-infusion" aria-expanded="false" aria-controls="accordion-open-gerd-infusion" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-gerd-infusion" class="hidden" aria-labelledby="accordion-open-gerd-infusion-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Pain Killer IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Anti-Vomiting</li>
+                  <li class="text-dark-primary font-serif text-sm">Gaster Protector IV</li>
+                  <li class="text-dark-primary font-serif text-sm">Vit B1, B6, B12 IV</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Iron Infusion</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/9.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Iron Infusion.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.790.000</div>
+          </div>
+          <div id="accordion-iron-infusion" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-iron-infusion">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-iron-infusion-description" aria-expanded="true" aria-controls="accordion-open-iron-infusion-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-iron-infusion-description" class="hidden h-full" aria-labelledby="accordion-open-heading-iron-infusion">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">Iron infusion is an effective treatment for iron deficiency, the condition that causes tiredness and affects your ability to function.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-iron-infusion-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-iron-infusion" aria-expanded="false" aria-controls="accordion-open-iron-infusion" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-iron-infusion" class="hidden" aria-labelledby="accordion-open-iron-infusion-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Infusion Ringer Lactat 500 cc</li>
+                  <li class="text-dark-primary font-serif text-sm">Infusion NACL 100 cc</li>
+                  <li class="text-dark-primary font-serif text-sm">Vit C 1000 mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Vit B Compex 5000 mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Iron Sucrose Complex 100 mg</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Candida IV Treatment</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/10.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/IV BAG 3.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.400.000</div>
+          </div>
+          <div id="accordion-candida-iv-treatment" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-candida-iv-treatment">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-candida-iv-treatment-description" aria-expanded="true" aria-controls="accordion-open-candida-iv-treatment-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-candida-iv-treatment-description" class="hidden h-full" aria-labelledby="accordion-open-heading-candida-iv-treatment">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">Combat Candida overgrowth effectively with our expert-designed IV therapy. Delivering essential nutrients directly into your bloodstream, our treatment targets symptoms and root causes, promoting balance and vitality.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-candida-iv-treatment-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-candida-iv-treatment" aria-expanded="false" aria-controls="accordion-open-candida-iv-treatment" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-candida-iv-treatment" class="hidden" aria-labelledby="accordion-open-candida-iv-treatment-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Antifungal Broad Spectrum 200ml</li>
+                </ul>
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Candida Overgrowth Symptoms :</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Fungal Infections</li>
+                  <li class="text-dark-primary font-serif text-sm">Oral Thrush</li>
+                  <li class="text-dark-primary font-serif text-sm">Digestive Issues</li>
+                  <li class="text-dark-primary font-serif text-sm">Autoimmune Diseases</li>
+                  <li class="text-dark-primary font-serif text-sm">Brain Fog</li>
+                  <li class="text-dark-primary font-serif text-sm">Skin Issues</li>
+                  <li class="text-dark-primary font-serif text-sm">Mood Swings</li>
+                  <li class="text-dark-primary font-serif text-sm">Vaginal Infections</li>
+                  <li class="text-dark-primary font-serif text-sm">Carbohydrate Cravings</li>
+                  <li class="text-dark-primary font-serif text-sm">Seasonal Allergies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">NAD+ Infusion</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/11.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Super Immune Booster.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.690.000</div>
+          </div>
+          <div id="accordion-nad-infusion" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-nad-infusion">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-nad-infusion-description" aria-expanded="true" aria-controls="accordion-open-nad-infusion-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-nad-infusion-description" class="hidden h-full" aria-labelledby="accordion-open-heading-nad-infusion">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">NAD+ infusion boosts energy, cognition, and cellular repair while aiding in detoxification. Athletes benefit from enhanced endurance and faster recovery. This therapy optimizes cellular function and energy levels comprehensively.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-nad-infusion-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-nad-infusion" aria-expanded="false" aria-controls="accordion-open-nad-infusion" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-nad-infusion" class="hidden" aria-labelledby="accordion-open-nad-infusion-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Electrolytes (500 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Retinol (3,500 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Cholecalciferol (220 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Alphatocopherol (11.2 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C (2125 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamine B1 (103.51 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (4.14 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6 (104.53 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamine B12 (5.006 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Folic acid (0.414 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B5 (17.25 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Biotin (0.069 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Nicotinamide (46 mg)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Gym Power Infusion</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/12.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Super Bali Belly IV.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.800.000</div>
+          </div>
+          <div id="accordion-gym-power-infusion" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-gym-power-infusion">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-gym-power-infusion-description" aria-expanded="true" aria-controls="accordion-open-gym-power-infusion-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-gym-power-infusion-description" class="hidden h-full" aria-labelledby="accordion-open-heading-gym-power-infusion">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">Enhance your workout with a specially formulated infusion designed to elevate energy levels, improve focus, and prepare your muscles for the challenges ahead.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-gym-power-infusion-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-gym-power-infusion" aria-expanded="false" aria-controls="accordion-open-gym-power-infusion" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-gym-power-infusion" class="hidden" aria-labelledby="accordion-open-gym-power-infusion-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Electrolytes (1000 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C (2000 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (Riboflavin) (4 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B3 (Niacin) (40 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B5 (Asam Pantotenat) (20 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6 (Pyridoxine) (4 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B12 (Cobalamin) (1000 mcg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Magnesium Sulfate (800 mg) (4 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Calcium Gluconate (200 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Carnitine (2.5 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Aquades (12 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Caffeine (100 mg)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Gym Recovery Infusion</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/13.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Gerd_Gastritis Infusion.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 1.800.000</div>
+          </div>
+          <div id="accordion-gym-recovery-infusion" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-gym-recovery-infusion">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-gym-recovery-infusion-description" aria-expanded="true" aria-controls="accordion-open-gym-recovery-infusion-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-gym-recovery-infusion-description" class="hidden h-full" aria-labelledby="accordion-open-heading-gym-recovery-infusion">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">Speed up muscle recovery and reduce post-workout fatigue with a replenishing infusion that helps repair muscle cells and restore energy levels.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-gym-recovery-infusion-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-gym-recovery-infusion" aria-expanded="false" aria-controls="accordion-open-gym-recovery-infusion" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-gym-recovery-infusion" class="hidden" aria-labelledby="accordion-open-gym-recovery-infusion-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Electrolytes 1000ml</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C 2000mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (Riboflavin) 4mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B3 (Niacin) 40mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B5 (Asam Pantotenat) 20mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6 (Pyridoxine) 4mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B12 (Cobalamin) 1000mcg</li>
+                  <li class="text-dark-primary font-serif text-sm">Magnesium Sulfate 800mg (4ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Calcium Gluconate 200mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Glutathione 600mg</li>
+                  <li class="text-dark-primary font-serif text-sm">Aquades 12ml</li>
+                  <li class="text-dark-primary font-serif text-sm">BCAA 2gr</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl md:w-full">
+          <div class="flex justify-center items-center py-3 bg-orange-primary text-white font-serif text-lg rounded-t-3xl">Covid Immune Booster</div>
+          <div class="flex w-full relative h-auto">
+            <img src="assets/images/product/Mobile/14.webp" alt="bali_belly_infusion" class="block md:hidden w-full object-cover object-center h-auto" />
+            <img src="assets/images/product/Desktop/Basic Immune Booster.webp" alt="bali_belly_infusion" class="hidden md:block w-full object-cover object-center h-[280px] md:h-[240px] 2xl:h-auto" />
+            <div class="flex py-2 pl-7 pr-3 bg-orange-primary text-white font-serif text-sm font-bold absolute right-0 bottom-0" style="border-radius: 78px 0 0 0; border-top: 4px solid #ffffff">Rp. 2.250.000</div>
+          </div>
+          <div id="accordion-covid-immune-booster" data-accordion="open" class="flex flex-col h-full">
+            <h2 id="accordion-open-heading-covid-immune-booster">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3 border border-b-white" data-accordion-target="#accordion-open-covid-immune-booster-description" aria-expanded="true" aria-controls="accordion-open-covid-immune-booster-description" style="background: #299f5d">
+                <span class="text-white font-serif">Description</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-covid-immune-booster-description" class="hidden h-full" aria-labelledby="accordion-open-heading-covid-immune-booster">
+              <div class="bg-soft-green p-5 dark:bg-soft-green flex items-center h-full">
+                <p class="mb-2 text-center text-dark-primary font-serif text-sm leading-[140%]">The immune booster infusion, containing a combination of vitamins, minerals, and antioxidants proven to support immune function, offers a fast and effective means to enhance your immune system and combat infections.</p>
+              </div>
+            </div>
+
+            <h2 id="accordion-open-covid-immune-booster-composition">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium gap-3" data-accordion-target="#accordion-open-covid-immune-booster" aria-expanded="false" aria-controls="accordion-open-covid-immune-booster" style="background: #299f5d">
+                <span class="text-white font-serif">Composition</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-covid-immune-booster" class="hidden" aria-labelledby="accordion-open-covid-immune-booster-composition">
+              <div class="bg-soft-green p-5 dark:bg-soft-green">
+                <p class="mb-2 text-dark-primary font-bold font-serif text-sm mt-4">Details:</p>
+                <ul class="ps-5 list-disc">
+                  <li class="text-dark-primary font-serif text-sm">Electrolytes (500 ml)</li>
+                  <li class="text-dark-primary font-serif text-sm">Zinc (5 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Retinol (3,500 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Cholecalciferol (220 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Alphatocopherol (11.2 IU)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin C (2125 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamine B1 (103.51 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B2 (4.14 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B6 (104.53 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamine B12 (5.006 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Folic acid (0.414 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Vitamin B5 (17.25 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Biotin (0.069 mg)</li>
+                  <li class="text-dark-primary font-serif text-sm">Nicotinamide (46 mg)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Service -->
+
+    <!-- Why Choose Us -->
+    <div class="block md:hidden py-16 bg-[url('assets/images/bg-why-choose-us-desk.webp')] bg-cover bg-center">
+      <h1 class="font-serif text-2xl md:text-4xl font-extrabold text-dark-green text-center mb-3 md:mb-7">Why Choose Us</h1>
+      <div id="splide-why-choose-us" class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide px-2">
+              <div class="flex w-[268px] pt-16 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-3 relative mt-[110px] h-[260px]">
+                <h5 class="text-dark-green text-center font-['Noto_Serif'] text-base font-bold">24/7 Availability</h5>
+                <p class="text-dark-primary font-serif text-xs text-center">Your health is our top priority, which is why we offer services around the clock, ensuring support whenever you need it.</p>
+                <img src="assets/images/icon-247-availability.svg" alt="icon-std" class="absolute left-0 right-0 w-[120px] h-[120px] md:w-[185px] md:h-[185px]" style="margin-inline: auto; top: -80px" />
+              </div>
+            </li>
+            <li class="splide__slide px-2">
+              <div class="flex w-[268px] pt-16 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-3 relative mt-[110px] h-[260px]">
+                <h5 class="text-dark-green text-center font-['Noto_Serif'] text-base font-bold">Home Care Services</h5>
+                <p class="text-dark-primary font-serif text-xs text-center">We bring top-tier medical care to your doorstep, so there's no need to visit a clinic for exceptional treatment.</p>
+                <img src="assets/images/icon-homecare.svg" alt="icon-std" class="absolute left-0 right-0 w-[120px] h-[120px] md:w-[185px] md:h-[185px]" style="margin-inline: auto; top: -80px" />
+              </div>
+            </li>
+            <li class="splide__slide px-2">
+              <div class="flex w-[268px] pt-16 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-3 relative mt-[110px] h-[260px]">
+                <h5 class="text-dark-green text-center font-['Noto_Serif'] text-base font-bold">Expert Team of Professionals</h5>
+                <p class="text-dark-primary font-serif text-xs text-center">Our team consists of highly skilled specialists in the healthcare field, dedicated to delivering personalized and compassionate care to every patient.</p>
+                <img src="assets/images/icon-expert.svg" alt="icon-std" class="absolute left-0 right-0 w-[120px] h-[120px] md:w-[185px] md:h-[185px]" style="margin-inline: auto; top: -80px" />
+              </div>
+            </li>
+            <li class="splide__slide px-2">
+              <div class="flex w-[268px] pt-16 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-3 relative mt-[110px] h-[260px]">
+                <h5 class="text-dark-green text-center font-['Noto_Serif'] text-base font-bold">Safe and Sterile Equipment</h5>
+                <p class="text-dark-primary font-serif text-xs text-center">We maintain strict hygiene standards, using only sterile medical instruments and medications that are thoroughly tested for safety and quality.</p>
+                <img src="assets/images/icon-safe.svg" alt="icon-std" class="absolute left-0 right-0 w-[120px] h-[120px] md:w-[185px] md:h-[185px]" style="margin-inline: auto; top: -80px" />
+              </div>
+            </li>
+            <li class="splide__slide px-2">
+              <div class="flex w-[268px] pt-16 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-3 relative mt-[110px] h-[260px]">
+                <h5 class="text-dark-green text-center font-['Noto_Serif'] text-base font-bold">Comprehensive Range of Services</h5>
+                <p class="text-dark-primary font-serif text-xs text-center">No matter what you need to maintain your health, we offer a wide array of medical services tailored to your wellbeing.</p>
+                <img src="assets/images/icon-comprehensive.svg" alt="icon-std" class="absolute left-0 right-0 w-[120px] h-[120px] md:w-[185px] md:h-[185px]" style="margin-inline: auto; top: -80px" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden md:block py-16 bg-[url('assets/images/bg-why-choose-us-desk.webp')] bg-cover bg-center">
+      <div class="container mx-auto 2xl:px-40">
+        <h1 class="font-serif text-2xl md:text-4xl font-extrabold text-dark-green text-center mb-5 md:mb-7">Why Choose Us</h1>
+        <div class="flex flex-col md:flex-row mx-auto w-full gap-7 justify-center">
+          <div class="flex pt-24 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-4/12">
+            <h5 class="text-dark-green text-center font-['Noto_Serif'] text-2xl font-bold">24/7 Availability</h5>
+            <p class="text-dark-primary font-serif text-base text-center">Your health is our top priority, which is why we offer services around the clock, ensuring support whenever you need it.</p>
+            <img src="assets/images/icon-247-availability.svg" alt="icon-std" class="absolute left-0 right-0 w-[140px] h-[140px]" style="margin-inline: auto; top: -80px" />
+          </div>
+          <div class="flex pt-24 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-4/12">
+            <h5 class="text-dark-green text-center font-['Noto_Serif'] text-2xl font-bold">Home Care Services</h5>
+            <p class="text-dark-primary font-serif text-base text-center">We bring top-tier medical care to your doorstep, so there's no need to visit a clinic for exceptional treatment.</p>
+            <img src="assets/images/icon-homecare.svg" alt="icon-std" class="absolute left-0 right-0 w-[140px] h-[140px]" style="margin-inline: auto; top: -80px" />
+          </div>
+          <div class="flex pt-24 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-4/12">
+            <h5 class="text-dark-green text-center font-['Noto_Serif'] text-2xl font-bold">Expert Team of Professionals</h5>
+            <p class="text-dark-primary font-serif text-base text-center">Our team consists of highly skilled specialists in the healthcare field, dedicated to delivering personalized and compassionate care to every patient.</p>
+            <img src="assets/images/icon-expert.svg" alt="icon-std" class="absolute left-0 right-0 w-[140px] h-[140px]" style="margin-inline: auto; top: -80px" />
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row mx-auto w-full gap-7 justify-center">
+          <div class="flex pt-24 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-4/12">
+            <h5 class="text-dark-green text-center font-['Noto_Serif'] text-2xl font-bold">Safe and Sterile Equipment</h5>
+            <p class="text-dark-primary font-serif text-base text-center">We maintain strict hygiene standards, using only sterile medical instruments and medications that are thoroughly tested for safety and quality.</p>
+            <img src="assets/images/icon-safe.svg" alt="icon-std" class="absolute left-0 right-0 w-[140px] h-[140px]" style="margin-inline: auto; top: -80px" />
+          </div>
+          <div class="flex pt-24 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-4/12">
+            <h5 class="text-dark-green text-center font-['Noto_Serif'] text-2xl font-bold">Comprehensive Range of Services</h5>
+            <p class="text-dark-primary font-serif text-base text-center">No matter what you need to maintain your health, we offer a wide array of medical services tailored to your wellbeing.</p>
+            <img src="assets/images/icon-comprehensive.svg" alt="icon-std" class="absolute left-0 right-0 w-[140px] h-[140px]" style="margin-inline: auto; top: -80px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Why Choose Us -->
+
+    <!-- About Us -->
+    <div class="py-16 bg-[url('assets/images/bg-about-us-mobile.webp')] md:bg-[url('assets/images/bg-about-us-desk.webp')] bg-cover bg-center">
+      <div class="container m-auto md:px-10 lg:px-10 2xl:px-40">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div class="flex flex-col gap-4 md:gap-8 w-full lg:w-6/12 justify-start">
+            <h1 class="text-soft-green font-extrabold text-lg md:text-[40px] font-serif">About Us</h1>
+            <img src="assets/images/logo-white.svg" alt="logo-white" class="w-[168px] md:w-[320px] h-auto" />
+          </div>
+          <div class="flex flex-col gap-4 w-full lg:w-6/12">
+            <h3 class="text-white text-xl md:text-[28px] font-bold font-serif">Bringing Wellness to You</h3>
+            <p class="text-white text-sm md:text-lg font-serif mb-2">Experience the convenience of our homecare intravenous infusion services, designed to elevate your overall health and vitality.</p>
+            <p class="text-white text-sm md:text-lg font-serif mb-2">Our expert team administers carefully crafted treatments, delivering essential vitamins and nutrients through a hydrating base fluid. This approach ensures you receive the rejuvenation and wellness boost you deserve, right in the comfort of your own space.</p>
+            <p class="text-white text-sm md:text-lg font-serif mb-2">At IV DRIP BALI, we're committed to providing wide range of integrated medical services, with a particular emphasis on infusion therapy. Your well-being is our top priority, and we're hereto help you feel your best.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+
+    <!-- Our Testimonials -->
+    <div class="py-16 container mx-auto md:px-10 lg:px-10 2xl:px-40">
+      <h1 class="font-serif text-2xl md:text-4xl font-extrabold text-dark-primary text-center mb-5 md:mb-7">Our Testimonials</h1>
+      <div id="splide-testimonials" class="splide mt-14" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="assets/images/WhatsApp Image 2023-09-12 at 9.40.59 AM 1.webp" alt="testimonial1" class="w-auto" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/images/WhatsApp Image 2023-09-12 at 9.40.59 AM 2.webp" alt="testimonial1" class="w-auto" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/images/WhatsApp Image 2023-09-12 at 9.40.59 AM 3.webp" alt="testimonial1" class="w-auto" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Testimonials -->
+
+    <!-- Footer -->
+    <div class="py-10 bg-light-green">
+      <div class="container m-auto">
+        <div class="flex justify-between items-center md:mb-11">
+          <img src="assets/images/logo-white.svg" alt="logo" class="w-[130px] md:w-[220px] h-auto" />
+          <div class="flex flex-col gap-2">
+            <p class="text-right text-white font-serif text-[10px] md:text-xs">Member of Aliansi <br />Telemedik Indonesia</p>
+            <img src="assets/images/logo-atensi.svg" alt="atensi" class="w-[80px] md:w-[120px] h-auto" />
+          </div>
+        </div>
+
+        <p class="block md:hidden text-white font-serif text-xs my-3"><span class="font-bold">Clinic Cepat Sehat</span> is a clinic registered under the laws of Indonesia with the registration number 04102100035090001.</p>
+        <p class="hidden md:block text-white font-serif text-base my-3"><span class="font-bold">Clinic Cepat Sehat</span> is a clinic registered under the laws of Indonesia with the registration number 04102100035090001.</p>
+        <div class="flex flex-col gap-3">
+          <p class="block md:hidden text-white font-serif text-xs">Enjoy our homecare service from the comfort of your home. We are also available offline at:</p>
+          <p class="hidden md:block text-white font-serif text-base">Enjoy our homecare service from the comfort of your home. We are also available offline at:</p>
+          <ul class="block md:hidden ps-3.5 list-disc text-white">
+            <li class="font-serif text-xs md:text-sm">
+              <p class="font-bold text-light-yellow">Seminyak Address</p>
+              <p>Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali 80361</p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline">Find Out Why Patients Love Us!</a>
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-light-yellow">Jimbaran Address</p>
+              <p>Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali 80361</p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline">Discover Our Patient Stories!</a>
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-light-yellow">Sanur Address</p>
+              <p>Jl. Batur Sari No.33, Sanur Kauh, Denpasar Selatan, Kota Denpasar, Bali 80228</p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline">See Our Patient Experiences!</a>
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-light-yellow">Canggu Address</p>
+              <p>Jl. Raya Canggu No.12, Canggu, Kec. Kuta Utara, Kabupaten Badung, Badung, Bali 80351</p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline">Read Our Top Reviews!</a>
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-light-yellow">Pererenan Address</p>
+              <p>Jl. Jantuk Angsa Desa No.20, Pererenan, Kec. Mengwi, Kabupaten Badung, Bali 80351</p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline">Explore Our Stellar Ratings!</a>
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-light-yellow">Jakarta Address</p>
+              <p>Jl. Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm. Jakarta Timur, DKI Jakarta 13510</p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline">Check Out Patient Reviews!</a>
+              </div>
+            </li>
+          </ul>
+          <div class="hidden md:block px-[40px]">
+            <div class="flex gap-11">
+              <ul class="ps-3.5 list-disc text-white">
+                <li class="font-serif text-xs md:text-sm">
+                  <p class="font-bold text-light-yellow">Seminyak Address</p>
+                  <p>Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali 80361</p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline">Find Out Why Patients Love Us!</a>
+                  </div>
+                </li>
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-light-yellow">Jimbaran Address</p>
+                  <p>Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali 80361</p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline">Discover Our Patient Stories!</a>
+                  </div>
+                </li>
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-light-yellow">Sanur Address</p>
+                  <p>Jl. Batur Sari No.33, Sanur Kauh, Denpasar Selatan, Kota Denpasar, Bali 80228</p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline">See Our Patient Experiences!</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="ps-3.5 list-disc text-white">
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-light-yellow">Canggu Address</p>
+                  <p>Jl. Raya Canggu No.12, Canggu, Kec. Kuta Utara, Kabupaten Badung, Badung, Bali 80351</p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline">Read Our Top Reviews!</a>
+                  </div>
+                </li>
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-light-yellow">Pererenan Address</p>
+                  <p>Jl. Jantuk Angsa Desa No.20, Pererenan, Kec. Mengwi, Kabupaten Badung, Bali 80351</p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline">Explore Our Stellar Ratings!</a>
+                  </div>
+                </li>
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-light-yellow">Jakarta Address</p>
+                  <p>Jl. Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm. Jakarta Timur, DKI Jakarta 13510</p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline">Check Out Patient Reviews!</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mt-4 md:mt-8">
+          <a href="#" class="flex gap-1 items-center">
+            <i class="ph-fill ph-phone text-white"></i>
+            <p class="text-white font-serif text-xs md:text-xl font-semibold">+62 858 1929 2434</p>
+          </a>
+          <div class="flex gap-1">
+            <a href=""><img src="assets/images/icon-world.svg" alt="icon-world" class="md:w-9 md:h-9" /></a>
+            <a href=""><img src="assets/images/icon-facebook.svg" alt="icon-facebook" class="md:w-9 md:h-9" /></a>
+            <a href=""><img src="assets/images/icon-ig.svg" alt="icon-ig" class="md:w-9 md:h-9" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex bg-white font-serif text-[10px] md:text-base text-[#696969] text-center items-center justify-center py-3 md:py-6">Copyright © 2024 IV Boost Bali. All Rights Reserved.</div>
+    <!-- End Footer -->
+
+    <!-- Floating Botton -->
+    <div class="flex flex-col gap-4" style="position: fixed; bottom: 20px; right: 20px">
+      <a data-tooltip-target="tooltip-whatsapp" data-tooltip-placement="left" href="#" class="flex p-3 rounded-full w-fit bg-green-400"><i class="ph ph-whatsapp-logo text-2xl text-white"></i></a>
+      <div id="tooltip-whatsapp" role="tooltip" class="absolute z-10 invisible flex px-3 py-2 text-sm font-medium text-dark-primary w-fit bg-gray-100 rounded-lg shadow-sm opacity-0 tooltip">
+        24/7 Chat 👩‍⚕️🚑
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+
+      <a data-tooltip-target="tooltip-telegram" data-tooltip-placement="left" href="#" class="flex p-3 rounded-full w-fit bg-blue-400"><i class="ph ph-telegram-logo text-2xl text-white"></i></a>
+      <div id="tooltip-telegram" role="tooltip" class="absolute z-10 invisible flex px-3 py-2 text-sm font-medium text-dark-primary w-fit bg-gray-100 rounded-lg shadow-sm opacity-0 tooltip">
+        24/7 Chat 👩‍⚕️🚑
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+    <!-- End Floating -->
+
+    <script src="accordion-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+      var splideTestimonials = new Splide("#splide-testimonials", {
+        type: "loop",
+        perPage: 3,
+        focus: "center",
+        pagination: false,
+        breakpoints: {
+          768: {
+            // Untuk layar dengan lebar maksimum 768px (tablet/ponsel)
+            perPage: 1, // Menampilkan 1 item per halaman di mobile
+          },
+        },
+      });
+
+      splideTestimonials.mount();
+
+      var splideWhyChooseUs = new Splide("#splide-why-choose-us", {
+        type: "loop",
+        focus: "center",
+        autoWidth: true,
+        pagination: false,
+        perPage: 3,
+        perMove: 1,
+        breakpoints: {
+          768: {
+            // Untuk layar dengan lebar maksimum 768px (tablet/ponsel)
+            perPage: 1, // Menampilkan 1 item per halaman di mobile
+          },
+        },
+      });
+
+      splideWhyChooseUs.mount();
+    </script>
+  </body>
+</html>
